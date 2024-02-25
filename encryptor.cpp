@@ -108,23 +108,23 @@ int main(int argc, char *argv[]){
 	for(int i = 0,j = 0;i < SZ8*2;i+=2,j++)key[j] = hex2bin((unsigned char *)ukey.c_str()+i);
         for(unsigned char i = SZ8;i < SZ16;i++)key[i] = key[i-SZ8];
 	if(!type.compare("-r")){
-		key[8]  ^= 'R';
-		key[9]  ^= 'O';
-		key[10] ^= 'T';
-		key[11] ^= 'A';
-		key[12] ^= 'T';
-		key[13] ^= 'O';
-		key[14] ^= 'R';
-		key[15] ^= 'R';
+		key[8]  ^= 'S';
+		key[9]  ^= 'E';
+		key[10] ^= 'C';
+		key[11] ^= 'R';
+		key[12] ^= 'E';
+		key[13] ^= 'T';
+		key[14] ^= '0';
+		key[15] ^= '1';
 	}else{
-		key[8]  ^= 'C';
-		key[9]  ^= 'O';
-		key[10] ^= 'N';
-		key[11] ^= 'T';
-		key[12] ^= 'R';
-		key[13] ^= 'O';
-		key[14] ^= 'L';
-		key[15] ^= 'R';
+		key[8]  ^= 'S';
+		key[9]  ^= 'E';
+		key[10] ^= 'C';
+		key[11] ^= 'R';
+		key[12] ^= 'E';
+		key[13] ^= 'T';
+		key[14] ^= '0';
+		key[15] ^= '2';
 	}
 	string srec;
 	while(true){
